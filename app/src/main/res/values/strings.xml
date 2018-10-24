@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Counter</string>
+    //Second type List View
+    <string-array name="arr">
+        <item> One </item>
+        <item> Two </item>
+        <item> Three </item>
+        <item> Four </item>
+    </string-array>
+</resources>
