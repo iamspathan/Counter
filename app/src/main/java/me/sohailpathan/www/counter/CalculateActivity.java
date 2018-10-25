@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class CalculateActivity extends AppCompatActivity {
 
-    EditText number ;
+    EditText number ,username , password;
     Button b1 , b2 , b3;
 
 
@@ -23,7 +23,20 @@ public class CalculateActivity extends AppCompatActivity {
         b1 = (Button)findViewById(R.id.increment);
         b2 = (Button)findViewById(R.id.decrement);
         number = (EditText)findViewById(R.id.number);
+        username = (EditText)findViewById(R.id.username);
+        password = (EditText)findViewById(R.id.password);
         b3 = (Button)findViewById((R.id.next));
+
+
+        Intent i = getIntent();
+        String us = i.getStringExtra("username");
+        String ps = i.getStringExtra("password");
+        username.setText(us);
+        password.setText(ps);
+
+        Intent j =new Intent();
+        j.putExtra("k" , us);
+        setResult(RESULT_OK,j);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override

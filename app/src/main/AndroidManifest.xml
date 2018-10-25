@@ -19,7 +19,10 @@
         <activity android:name=".CalculateActivity" />
         <activity android:name=".Component" />
         <activity android:name=".DropDownSpinner" />
-        <activity android:name=".WelcomeActivity"  android:label="Welcome">        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Welcome"></activity>
+        <activity android:name=".CA3"></activity>
     </application>
 
 </manifest>

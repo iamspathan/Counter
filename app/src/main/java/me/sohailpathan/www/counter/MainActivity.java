@@ -1,6 +1,7 @@
 package me.sohailpathan.www.counter;
 
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,9 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                else if(a.equalsIgnoreCase(b))
                 {
+
                     Toast.makeText(MainActivity.this , "Credential Match" , Toast.LENGTH_SHORT ).show();
-                    Intent intent = new Intent(MainActivity.this , WelcomeActivity.class);
-                    startActivity(intent);
+                    Intent intent = new Intent(MainActivity.this , CalculateActivity.class);
+                    intent.putExtra("username" , a);
+                    intent.putExtra("password" , b);
+                    startActivityForResult(intent,1);
+
                 }
 
                 else
@@ -44,4 +49,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==1)
+        {
+            String s = data.getStringExtra("k");
+            Toast.makeText(this,s,Toast.LENGTH_SHORT).show();
+        }
+    }
 }
+
+
