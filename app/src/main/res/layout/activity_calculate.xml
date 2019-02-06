@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:onClick="add"
+                android:id="@+id/add"
                 android:text="ADD" />
         </LinearLayout>
 
@@ -92,8 +92,6 @@
                 android:id="@+id/next"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"/>
-
-
         </LinearLayout>
     </LinearLayout>
 

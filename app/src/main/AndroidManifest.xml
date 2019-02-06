@@ -4,25 +4,28 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/android"
+        android:label="AndroidBasics"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CalculateActivity" />
+        <activity android:name=".Component" />
+        <activity android:name=".DropDownSpinner" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Welcome" />
+        <activity android:name=".CA3" />
+        <activity android:name=".Addition" />
+        <activity android:name=".cutomized_toolbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculateActivity" />
-        <activity android:name=".Component" />
-        <activity android:name=".DropDownSpinner" />
-        <activity
-            android:name=".WelcomeActivity"
-            android:label="Welcome"></activity>
-        <activity android:name=".CA3"></activity>
+        <activity android:name=".CustomToast"></activity>
     </application>
 
 </manifest>

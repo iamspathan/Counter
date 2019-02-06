@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Apple" android:icon="@mipmap/ic_launcher" android:id="@+id/apple"></item>
+    <item android:title="Ball" android:id="@+id/ball"></item>
+    <item android:title="Cat" android:id="@+id/cat"></item>
+    <item android:title="Dog" android:id="@+id/dog"></item>
+    <item android:title="Elephant" android:id="@+id/elephant"></item>
+
+</menu>
